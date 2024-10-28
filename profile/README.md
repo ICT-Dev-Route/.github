@@ -1,21 +1,43 @@
 # 초보 개발자를 위한 플랫폼, DevRoute📚</h1>
-## 프로젝트 소개
+## 1.Introduction
+### Goal
+> **DevRoute**는 초보 개발자들을 위해 직무별 로드맵과 기술 스택을 시각화해주는 플랫폼입니다. 이 프로젝트는 **초보 개발자**들이 목표를 명확하게 세우고 필요한 기술을 단계별로 익힐 수 있도록 돕기 위해 시작되었습니다.
 
-## 팀원 구성
+### Feature
+🚀**개발 로드맵 제공**<br>
+처음 시작하는 개발자들을 위한 단계별 로드맵 제공, 쉽게 따라할 수 있는 가이드!
 
-## 1. 개발 환경
+💼**채용공고 통합**<br>
+여러 채용공고를 한눈에! 이해하기 쉬운 형태로 정리된 정보 제공.
 
-## 2. 채택한 개발 기술과 브랜치 전략
-### 개발 기술
+🔍**기술 스택 분석**<br>
+현재 시장에서 인기 있는 기술 스택을 한눈에 파악, 초보자도 쉽게 이해할 수 있게 구성.
 
-### 브랜치 전략
+🎓**학습 자료 추천**<br>
+필요한 기술을 학습할 수 있는 유튜브 영상과 온라인 강의 추천.
 
-## 3. 주요 로직
+## 2.Team
 
-## 4. 디렉토리 구조
+## 3.Delopment Enviroment
+- **Operating Systems**: Windows 11, macOS
+- **IDEs**: IntelliJ, Visual Studio, AWS
+- **Frameworks & Libraries**: Spring Framework, React
+- **Languages**: Java, SQL, JavaScript
+- **Version Control**: GitHub
+- **Collaboration Tools**: Notion, Discord, Google Meet
+- **Server & Database**: AWS EC2, RDS, Docker
+- **CI/CD Pipeline**: GitHub Actions
+- **Monitoring Tools**: Prometheus, Grafana
 
-## 5. 프로젝트 기능
+## 4. Technologies and Branch Strategy
+### Technologies
 
-## 6. 트러블 슈팅
+### Branch Strategy
 
-## 7. 프로젝트를 통해 배운점, 느낀점
+## 5.Main Logic
+
+## 6. Directory Structure
+
+## 8. Trouble Shooting
+
+## 9. Insights and Reflections
