@@ -18,7 +18,7 @@
 
 ## 2.Team
 
-| **Front** | **Back** | **Back** | **Back** |
+| **Front** | **Back** | **Back** | **Back** |
 | :------: |  :------: | :------: | :------: |
 | [<img src="https://avatars.githubusercontent.com/u/65596779?v=4" height=150 width=150> <br/> @heewon1104](https://github.com/heewon1104) | [<img src="https://avatars.githubusercontent.com/u/113831848?v=4" height=150 width=150> <br/> @Munhangyeol](https://github.com/Munhangyeol) | [<img src="https://avatars.githubusercontent.com/u/63222221?v=4" height=150 width=150> <br/> @mete0rfish](https://github.com/mete0rfish) | [<img src="https://avatars.githubusercontent.com/u/121409074?v=4" height=150 width=150> <br/> @maark1106](https://github.com/maark1106) |
 
