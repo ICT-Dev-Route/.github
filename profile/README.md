@@ -41,6 +41,67 @@
 ## 5.Main Logic
 
 ## 6. Directory Structure
+### Backend
+```
+.
+└── devroute
+    ├── api
+    │   ├── suggestion
+    │   └── visitorcount
+    ├── bookmark
+    │   ├── domain
+    │   ├── exception
+    │   └── json
+    ├── company
+    │   ├── controller
+    │   ├── domain
+    │   ├── dto
+    │   ├── repository
+    │   └── service
+    ├── crawling
+    │   └── dto
+    ├── dataloader
+    ├── global
+    │   ├── aop
+    │   │   ├── crawl
+    │   │   └── timetrace
+    │   ├── auth
+    │   │   ├── filter
+    │   │   └── jwt
+    │   ├── config
+    │   └── exception
+    ├── recruitment
+    │   ├── controller
+    │   ├── domain
+    │   ├── dto
+    │   ├── enums
+    │   ├── repository
+    │   ├── service
+    │   └── utils
+    ├── roadmap
+    │   ├── description
+    │   ├── domain
+    │   ├── dto
+    │   ├── enums
+    │   └── repository
+    ├── user
+    │   ├── domain
+    │   ├── dto
+    │   ├── enums
+    │   └── service
+    └── video
+        ├── Repository
+        ├── constans
+        ├── domain
+        ├── dto
+        │   ├── infrean
+        │   ├── udemy
+        │   └── youtube
+        ├── enums
+        ├── exception
+        ├── fetcher
+        └── service
+```
 
 ## 8. Trouble Shooting
 
