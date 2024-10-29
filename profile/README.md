@@ -40,6 +40,34 @@
 
 ## 5.Main Logic
 
+<h4>로그인 및 회원가입</h4>
+<img src="https://github.com/user-attachments/assets/a4310ef9-d160-4924-9c7e-c430aac1a8f0" width="500"/>
+<img src="https://github.com/user-attachments/assets/a4310ef9-d160-4924-9c7e-c430aac1a8f0" width="500"/>
+
+<h4>메인 페이지</h4>
+<img src="https://github.com/user-attachments/assets/02531176-4aa0-4a9b-b490-0869cede8b4f" width="500"/>
+
+<h4>직군별 개발자 설명</h4>
+<img src="https://github.com/user-attachments/assets/7713ba9a-b7a5-47b5-9792-392dcfc8f344" width="500"/>
+
+<h4>개발자 로드맵</h4>
+<img src="https://github.com/user-attachments/assets/dff83337-9e60-47c0-a132-e9c3ff4c5543" width="500"/>
+
+<h4>기업 정보 검색</h4>
+<img src="https://github.com/user-attachments/assets/904391a1-373f-41c9-913a-715091381993" width="500"/>
+
+<img src="https://github.com/user-attachments/assets/5b98ce14-1bda-42f6-8890-fa68a3c3bf57" width="500"/>
+
+<h4>채용 공고</h4>
+<img src="https://github.com/user-attachments/assets/29fb4dfa-2d0d-42d4-9da8-856bde80f4ec" width="500"/>
+
+<h4>개발 관련 추천 영상</h4>
+<img src="https://github.com/user-attachments/assets/ea17fc0e-fcb7-46ac-811c-d99c5ff5d5d8" width="500"/>
+
+<h4>문의사항</h4>
+<img src="https://github.com/user-attachments/assets/879d556e-8066-45e0-a2cc-db1fd9848722" width="500"/>
+
+
 ## 6. Directory Structure
 ### Backend
 ```
