@@ -163,5 +163,20 @@
 ```
 
 ## 8. Trouble Shooting
+### Backend
+1. 영상 추천 페이지에서 **영상이 보이지 않거나**, **개발환경의 더미 데이터가 함께 보이는 문제**를 해결.( [#117: 영상 추천을 보여주는 페이지의 오류 잡기](https://github.com/ICT-Dev-Route/Dev-Route-BE/issues/117))
+   - **개발 및 운영 환경 분리**
+       - 기존에는 `application.properties`에서 수동으로 프로파일을 설정하여 RDS에 데이터가 중복 저장되는 문제가 있었습니다.
+       - 이를 해결하기 위해 `application-dev.properties`와 `application-prod.properties` 파일로 환경을 분리하여, 각 환경에 맞는 설정이 자동으로 적용되도록 개선했습니다.
+2. CI/CD 시 **CPU 사용률 및 메모리 사용 문제**를 해결.([#125:CPU사용률 제어](https://github.com/ICT-Dev-Route/Dev-Route-BE/issues/115))
+     - **CI/CD 개선을 통한 CPU 부하 완화**
+       - Docker 빌드 시 캐싱을 적용해 빌드 시간을 단축하고, DockerHub에서 이미지를 Pull한 후 CPU 사용률 제어를 통해 CI/CD 과정에서의 부하를 줄였습니다.
+     
+    | 항목                | 기존 방식                                | 변경 후 설정                                      |
+    |---------------------|------------------------------------------|---------------------------------------------------|
+    | **CI/CD 시간 단축** | 캐싱 미적용, 긴 빌드 시간                | 캐싱 도입으로 CI/CD 시간 55.37% 개선               |
+    | **CPU 사용률**      | 최대 97% 도달                            | 개선 후 약 53.6% 감소                              |
+
+
 
 ## 9. Insights and Reflections
