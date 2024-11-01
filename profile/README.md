@@ -36,7 +36,38 @@
 ## 4. Technologies and Branch Strategy
 ### Technologies
 
+<img width="478" alt="image" src="https://github.com/user-attachments/assets/404b2569-2d02-4ed4-b9ae-7a0b502590a5"><img width="473" alt="image" src="https://github.com/user-attachments/assets/94fabc9c-c261-4716-b894-1022cffa0a00">
+
+
+**[ System Configuration ]**
+- **프론트엔드**: **React** 프레임워크로 JavaScript 기반의 반응형 웹 인터페이스를 구축하여, UI/UX를 구현하였습니다.
+- **백엔드**: Java를 기반으로 한 **Spring Framework**와 **Spring Boot**로 견고하고 확장 가능한 서버 아키텍처를 설계했습니다.
+- **데이터베이스**: DB 엔진은 **MySQL 8.4.0** 버전을 이용합니다.
+
+> 1) 웹과 서버와 통신 시, **Jwt Token**을 이용하여 유저의 인증 및 인가가 진행됩니다.
+>  2) 서버에서 데이터베이스 접근 시 JPA(ORM)을 구현한 **Hibernate**를 이용하며 MySQL과 연동하여 데이터를 저장 및 이용합니다.
+> 3) **API**를 제공하는 사람인과 유튜브, 유데미는 OpenAPI를 통해 정보를 얻습니다.
+> 4) API를 제공하지 않는 잡플래닛, 잡코리아, 인프런은 **Selenium**을 통해 플랫폼과 상호작용합니다.
+
+**[ CI/CD ]**
+1. GitHub에 Push 후 Merge가 되면 Github Actions의 CI/CD 파이프라인을 이용합니다.
+2. Github에 파일을 통해 빌드 후, Docker 이미지를 빌드하고 Docker Hub에 이를 Push 합니다.
+3. Github Actions는 서버가 배포된 EC2에 SSH 접속하여 Docker Hub로 부터 이미지를 Pull 후, 컨테이너를 실행합니다.
+
+**[ AWS ]**
+1. 서버는 EC2 컨테이너에서 작동되고, 클라이언트는 S3 기반의 CloudFront 서비스를 통해 작동됩니다.
+2. 보안을 위한 HTTPS 적용을 위해 SSL은 ACM을 이용하고, Route 53을 통해 도메인과 연결 후, EC2와 S3에 각각 연결합니다.
+3. 서버의 HTTPS 사용을 강제하기 위해 EC2는 로드밸런서를 통해 HTTP/80 접속 시, HTTPS/443으로 리다이렉트 되도록 지정합니다.
+4. 클라이언트의 HTTPS 사용을 강제하기 위해 CloudFront의 설정을 HTTPS로 리다이렉트 되도록 지정합니다.
+
+
+
+
+
+
+
 ### Branch Strategy
+깔끔한 개발 프로세스를 유지하기 위해 **GitHub Flow** 브랜치 전략을 사용합니다. 각 기능이나 수정 사항은 별도의 브랜치에서 개발되며, **Pull Request**를 통해 메인 브랜치에 병합됩니다. 일관성을 위해 **PR 템플릿**을 사용하여 주요 변경 사항을 명확히 하고, 팀원들이 효율적으로 **코드 리뷰**를 진행할 수 있도록 지원합니다. 이 방식은 코드 품질을 유지하고 협력적인 개발을 촉진합니다.
 
 ## 5.Main Logic
 
