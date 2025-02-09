@@ -185,9 +185,12 @@
     |---------------------|------------------------------------------|---------------------------------------------------|
     | **Live Thread Count** (현재 실행 중인 모든 스레드의 수) | 31 Threads             | 27 Threads (-4)              |
     | **Daemon Thread Count** (백그라운드 실행 중인 스레드의 수)      | 26 Threads                     | 22 Threads (-4)       |
+   
 
+4. 데이터베이스 Index를 활용해서 비디오 데이터 조회시 발생하는 성능을 96.49% 개선
+   - 홈페이지 화면에서 비디오 조회시의 order by를 수행 후 조회하는 연산시, 기존에는 ```Table full scan```을 활용해서 조회하므로 느렸음
+   - 이를 인덱싱을 활용해서 10000개의 데이터 기준 0.009398sec에서 0.00033sec로 **96.49%** 성능 개선
+  ([인덱스를 활용한 조회성능 최적화](https://github.com/ICT-Dev-Route/Dev-Route-BE/pull/138))
 
-## 9. Insights and Reflections
-
-## 10. Presentation
+## 9. Presentation
 [Google Slids](https://docs.google.com/presentation/d/1bHuITo0p8zitikeNWGA1nkG0hogWINJidQZ33G7mzbo/edit#slide=id.gd431007ba2_0_208)
